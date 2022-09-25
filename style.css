@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+:root{
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body{
+    background: var(--VeryDarkBlue);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-image: linear-gradient(to bottom, var(--DarkBlue)-100%, var(--VeryDarkBlue)500%);
+    padding: 30px;
+    width: 380px;
+    height: 360px;
+    border-radius: 20px;
+}
+
+.wrap-icon{
+    background: var(--DarkBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 40px;
+}
+
+.container h1{
+    color: var(--White);
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 15px ;
+    margin-bottom: 15px;
+}
+
+.container p{
+    color: var(--LightGrey);
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.wrap-rating{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.wrap-rating label{
+    background: var(--DarkBlue);
+    color: var(--LightGrey);
+    font-size: 14px;
+    width: 45px;
+    height: 45px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.wrap-rating label:hover{
+    color: var(--White);
+    background: hsl(25, 97%, 53%);
+}
+.wrap-rating input:checked + label{
+    background: var(--LightGrey);
+    color: var(--White);
+}
+.wrap-rating input{
+    display: none;
+}
+
+input[type="submit"]{
+    background: hsl(25, 97%, 53%);
+    color: var(--White);
+    font-size: 14px;
+    letter-spacing: 1px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.2s;
+}
+input[type="submit"]:hover{
+    background: var(--White);
+    color: hsl(25, 97%, 53%);
+}
+
+/* thank-you card */
+
+#card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    z-index: -2;
+    transition: 0.5s;
+}
+
+#card2 h2{
+    color: hsl(25, 97%, 53%);
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding: 5px 15px;
+    border-radius: 15px;
+    background: var(--DarkBlue);
+    margin-top: 30px;
+}
+
+#card2 p{
+    text-align: center;
+}
