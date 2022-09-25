@@ -1,5 +1,5 @@
 # Frontend Mentor - Interactive rating component
-
+[visit my Live site](https://exquisite-melomakarona-7d8150.netlify.app/)
 ![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
